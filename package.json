@@ -1,0 +1,46 @@
+{
+  "name": "pikes-api",
+  "version": "1.0.0",
+  "description": "A RestAPI for pike project",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "node scripts/test.js",
+    "lint": "eslint ./src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fcaldera/pikes-api.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fcaldera/pikes-api/issues"
+  },
+  "homepage": "https://github.com/fcaldera/pikes-api#readme",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "chalk": "^2.4.1",
+    "dotenv": "^6.0.0",
+    "express": "^4.16.3",
+    "require-dir": "^1.1.0"
+  },
+  "devDependencies": {
+    "casual": "^1.5.19",
+    "eslint": "^5.6.1",
+    "eslint-plugin-jest": "^21.24.1",
+    "eslint-plugin-node": "^7.0.1",
+    "husky": "^1.1.1",
+    "jest": "^23.6.0",
+    "jest-extended": "^0.11.0",
+    "nodemon": "^1.18.4",
+    "prettier": "^1.14.3",
+    "pretty-quick": "^1.7.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
+  }
+}
